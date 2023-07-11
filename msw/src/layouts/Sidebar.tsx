@@ -9,6 +9,9 @@ function Sidebar() {
           <Link to="/">Home</Link>
         </li>
         <li>
+          <Link to="/">Conditional Rendering</Link>
+        </li>
+        <li>
           <Link to="/jsx">JSX</Link>
         </li>
         <li>

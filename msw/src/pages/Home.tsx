@@ -1,11 +1,18 @@
-import React from 'react';
-import logo from '../logo.svg';
+import React, { useEffect } from 'react';
+// import logo from '../logo.svg';
+import { http } from '../api/axios';
 
 function Home() {
+  const getUser = async () => {
+    const result = await http.get('/api/user');
+    console.log(result);
+    return result;
+  };
+  useEffect(() => {
+    getUser();
+  }, []);
   return (
     <div>
-      {' '}
-      <img src={logo} className="App-logo" alt="logo" />
       <p>
         Edit <code>src/App.tsx</code> and save to reload.
       </p>
