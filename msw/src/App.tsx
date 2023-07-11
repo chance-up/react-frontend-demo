@@ -1,8 +1,8 @@
 import './App.css';
 import { Routes, Route, BrowserRouter } from 'react-router-dom';
-import JSX from './views/JSX';
-import Props from './views/Props';
-import Home from './views/Home';
+import JSX from './pages/JSX';
+import Props from './pages/Props';
+import Home from './pages/Home';
 
 import Sidebar from './layouts/Sidebar';
 
