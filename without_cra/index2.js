@@ -1,15 +1,18 @@
-import {HelloChoi} from './index2.js'
 
-function Hello(props) {
-  return React.createElement('h1', null, `Hello ${props.text}`);
+export function HelloChoi () {
+
+  function Hello(props) {
+    return React.createElement('h1', null, `Hello ${props.text}`);
+  }
+  
+  ReactDOM.render(
+   React.createElement(Hello, {text: 'Choi'}, null),
+   document.getElementById('root2')
+  );
 }
 
-ReactDOM.render(
- React.createElement(Hello, {text: 'World'}, null),
- document.getElementById('root')
-);
+// module.exports = {HelloChoi};
 
-HelloChoi();
 
 // import React from './react.development.js';
 // import ReactDOM from './react-dom.development.js';

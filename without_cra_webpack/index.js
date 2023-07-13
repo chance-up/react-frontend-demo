@@ -1,4 +1,6 @@
-import {HelloChoi} from './index2.js'
+
+// import React from 'react';
+// import { createRoot } from 'react-dom/client';
 
 function Hello(props) {
   return React.createElement('h1', null, `Hello ${props.text}`);
@@ -9,7 +11,12 @@ ReactDOM.render(
  document.getElementById('root')
 );
 
-HelloChoi();
+// const container = document.getElementById('root');
+// const root = createRoot(container);
+// const element = React.createElement("h1", null, "Hello, World!");
+
+// root.render(element);
+
 
 // import React from './react.development.js';
 // import ReactDOM from './react-dom.development.js';
