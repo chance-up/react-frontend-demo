@@ -4,24 +4,9 @@
     <title>My app</title>
     <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
     <script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
-    
   </head>
-
 <body>
-
   <div id="root"></div>
-
-  <script >
-    function Hello(props) {
-      return React.createElement('h1', null, `Hello ${props.text}`);
-    }
-    
-    ReactDOM.render(
-     React.createElement(Hello, {text: 'World'}, null),
-     document.getElementById('root')
-    );
-  </script>
-
+  <script type="module" src="./src/App.js"></script>
 </body>
-  
 </html>
